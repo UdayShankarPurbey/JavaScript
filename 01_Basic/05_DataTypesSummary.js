@@ -5,7 +5,7 @@
  * 
  * Reference (Non Primitive )
  * 
- * Array , Objects , Functions
+ * Array , Objects , Functions -- stores in heap memory
  *  */ 
 
 const Name = 'uday'
@@ -29,3 +29,19 @@ const myFun = function sayHello() {
     console.log('Hello Uday');
 }
 console.log(typeof myFun);//Function 
+
+
+// *******************************************************************
+let myPcName = 'myPcName'
+let anotherPcName = 'anotherPcName'
+anotherPcName = 'officePcName'
+console.log(myPcName , anotherPcName);
+
+let user = {
+    email : 'test@example.com',
+    upi : 'test@ybl',
+}
+
+let userTwo = user
+userTwo.upi = 'test@apl' //changes in both beacuse share same address
+console.log(user , userTwo);
