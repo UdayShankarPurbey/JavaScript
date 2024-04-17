@@ -112,3 +112,11 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 console.log(tinderUser.hasOwnProperty("id"));
 
+const course = {
+    name : "JavaScript",
+    author : "Udacity",
+    price : 9999,
+}
+
+const {name : Teacher , author  } = course;
+console.log( Teacher , author);
