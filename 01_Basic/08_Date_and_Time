@@ -1,0 +1,30 @@
+//Dates 
+
+let myDate = new Date();
+console.log("1",myDate);
+console.log("2",myDate.toLocaleTimeString());
+console.log("3",myDate.toISOString());
+console.log("4",myDate.toLocaleDateString());
+console.log("5",myDate.toString());
+console.log(typeof myDate);
+
+// let myBirthday = new Date(2001 , 2, 16 );
+let myBirthday = new Date(2001 , 2, 16 , 5, 3);
+console.log(myBirthday.toString());
+
+let myCreatedDate = new Date("2001-01-01")
+console.log(myCreatedDate.toLocaleString());
+console.log(myCreatedDate.getTime());
+
+let myTimeStamp = Date.now()
+console.log(myTimeStamp);
+
+let newDate = new Date();
+console.log(newDate);
+console.log(newDate.getMonth() + 1);
+console.log(newDate.getFullYear());
+
+let newDateFormat = newDate.toLocaleString('default', {
+    weekday : "long"
+})
+console.log(newDateFormat);
